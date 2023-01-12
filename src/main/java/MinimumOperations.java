@@ -22,6 +22,9 @@ public class MinimumOperations {
         int otherCountOfH = 1;
         int numberOfOperations = 0;
 
+        if (n <= 1) {
+            return 0;
+        }
 
         while (countOfH != n) {
                 if (countOfH % 2 == 1 || countOfH == n / 2) {
